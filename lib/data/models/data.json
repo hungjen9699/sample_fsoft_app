@@ -1,0 +1,36 @@
+{
+    "version": "4",
+    "rollouts": [],
+    "typedAudiences": [],
+    "variables": [],
+    "featureFlags": [],
+    "experiments": [],
+    "groups": [],
+
+    "anonymizeIP": true,
+    "projectId": "20445543568",
+  
+    "audiences": [
+        {
+            "conditions": "[\"or\", {\"match\": \"exact\", \"name\": \"$opt_dummy_attribute\", \"type\": \"custom_attribute\", \"value\": \"$opt_dummy_value\"}]",
+            "id": "$opt_dummy_audience",
+            "name": "Optimizely-Generated Audience for Backwards Compatibility"
+        }
+    ],
+    "attributes": [
+        {
+            "id": "20418702385",
+            "key": "age"
+        }
+    ],
+    "botFiltering": false,
+    "accountId": "20445543568",
+    "events": [
+        {
+            "experimentIds": [],
+            "id": "20412463687",
+            "key": "SavedSearch"
+        }
+    ],
+    "revision": "2"
+}
