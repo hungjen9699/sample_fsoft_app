@@ -7,22 +7,9 @@ class SampleRepositoryImpl implements SampleRepository {
   final SampleAPIProvider apiProvider = new SampleAPIProviderImpl();
   SampleRepositoryImpl();
 
-  // @override
-  // Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(
-  //   int number,
-  // ) async {
-  //   return await _getTrivia(() {
-  //     return remoteDataSource.getConcreteNumberTrivia(number);
-  //   });
-  // }
   @override
   Future<EventGeneric> getData() async {
     return await apiProvider.getData();
   }
 
-  @override
-  Future<EventGeneric> getRandomNumberTrivia() {
-    // TODO: implement getRandomNumberTrivia
-    throw UnimplementedError();
-  }
 }

@@ -18,7 +18,7 @@ class GetSampleDataBloc extends Bloc<GetSampleDataEvent, GetSampleDataState> {
         yield GetSampleDataLoading();
         SampleRepository repo = new SampleRepositoryImpl();
         EventGeneric returnValue = await repo.getData();
-        if (returnValue.statusCode == "200") {
+        if (returnValue.statusCode == 200) {
           DataSampleModel data = returnValue.returnValue;
           yield GetSampleDataSuccess(data);
         } else {

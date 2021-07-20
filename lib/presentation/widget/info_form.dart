@@ -23,7 +23,7 @@ class _InfoFormState extends State<InfoForm> {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => widget.bloc,
-      child: BlocBuilder<GetSampleDataBloc, GetSampleDataState>(
+      child: BlocBuilder<GetSampleDataBloc,  GetSampleDataState>(
           builder: (context, state) {
         if (state is GetSampleDataInitial) {
           return Text("Intitial");
